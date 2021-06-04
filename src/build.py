@@ -104,13 +104,6 @@ if __name__ == "__main__":
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     data = yaml.load(open("constants.yaml"))
-    post_files = glob.glob(os.path.join("content/posts/", "**", "*.md"), recursive=True)
-    post_files = [f for f in post_files if os.path.split(f)[1] != "test.md"]
-    post_metadata = (markdown2.markdown_path(x, extras=["metadata"]).metadata for x in post_files)
-    post_names = (os.path.split(os.path.relpath(x))[1].replace('.md', '') for x in post_files)
-    post_mds = (f"<tr><td>[{meta['title']}]({name})</td><td>{meta['date']}</td></tr>" for meta, name in zip(post_metadata, post_names))
-
-    data["posts_list"] = markdown2.markdown('\n'.join(post_mds))
     data["current_year"] = str(datetime.datetime.now().year)
 
     builder = Builder(

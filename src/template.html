@@ -8,16 +8,15 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Homepage of Jack Brookes" /> {{ write_meta_date(metadata) }}
+    <meta name="description" content="Homepage of Emily Stanyer" /> {{ write_meta_date(metadata) }}
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@jackbrookes" />
-    <meta name="twitter:creator" content="@jackbrookes" />
-    <meta name="twitter:title" content="{{ metadata['title'] }} - Jack Brookes" />
-    <meta name="twitter:description" content="Homepage of Jack Brookes" />
-    <meta name="twitter:image" content="{{ data['url'] }}static/jbrookes-screenshot.png" />
+    <meta name="twitter:site" content="@emilystanyer" />
+    <meta name="twitter:creator" content="@emilystanyer" />
+    <meta name="twitter:title" content="{{ metadata['title'] }} - Emily Stanyer" />
+    <meta name="twitter:description" content="Homepage of Emily Stanyer" />
 
-    <title>{{ metadata['title'] }} - Jack Brookes</title>
+    <title>{{ metadata['title'] }} - Emily Stanyer</title>
 
 </head>
 
@@ -26,22 +25,16 @@
     <div id="container">
         <div id="sidebar">
             <nav>
-                <a class="header" href="/">Jack Brookes</a>
+                <a class="header" href="/">Emily Stanyer</a>
                 <ul id="links">
                     <li>
-                        <a href="/">Index</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="/my-work">My work</a>
                     </li>
                     <li>
-                        <a href="/posts">Posts</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/jackbrookes">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jackbrookes">GitHub</a>
+                        <a href="https://twitter.com/emilystanyer">Twitter</a>
                     </li>
                     <li>
                         <a href="/contact">Contact</a>
@@ -53,25 +46,9 @@
 
         <div id="content">
             {{ content }} {{ write_post_date(metadata) }}
-            <div id="footer">Jack Brookes &#169;{{ data["current_year"] }}</div>
+            <div id="footer">Emily Stanyer &#169;{{ data["current_year"] }}</div>
         </div>
     </div>
-
-    <!-- Default Statcounter code for jbrookes.com http://jbrookes.com -->
-    <script type="text/javascript">
-        var sc_project = 12132297;
-        var sc_invisible = 1;
-        var sc_security = "9e8bf11f";
-        var sc_https = 1;
-        var sc_remove_link = 1;
-    </script>
-    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript>
-        <div class="statcounter">
-            <img class="statcounter" src="https://c.statcounter.com/12132297/0/9e8bf11f/1/" alt="Web Analytics">
-        </div>
-    </noscript>
-    <!-- End of Statcounter Code -->
 
 </body>
 
